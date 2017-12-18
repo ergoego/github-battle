@@ -16,6 +16,31 @@ li {
   cursor: pointer;
 }
 
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+
+.popular-rank {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius:50%;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
