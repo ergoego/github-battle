@@ -1,5 +1,27 @@
 body {
-  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,SegoeUI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,HelveticaNeue,sans-serif;
+}
+
+ul {
   padding: 0;
-  font-family: sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+.languages li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
 }
