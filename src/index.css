@@ -50,3 +50,15 @@ li {
   display: flex;
   justify-content: center;
 }
+
+.nav {
+  display: flex;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav li {
+  margin-right: 15px;
+}
