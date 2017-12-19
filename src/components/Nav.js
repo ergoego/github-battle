@@ -9,7 +9,7 @@ let navBarPages = ['Home','Battle','Popular']
         {navBarPages.map(function(page) {
           return(
             <li>
-              <NavLink activeClassName='active' to={page === 'Home' ? '/' : '/'+page.toLowerCase()}>
+              <NavLink exact activeClassName='active' to={page === 'Home' ? '/' : '/'+page.toLowerCase()}>
                 {page}
               </NavLink>
             </li>

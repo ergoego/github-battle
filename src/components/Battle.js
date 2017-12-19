@@ -2,7 +2,11 @@ var React = require('react');
 var PropTypes = require('prop-types')
 
 function Battle () {
-  return(null)
+  return(
+    <div>
+      BATTLE!
+    </div>
+  )
 }
 
 export default Battle;
