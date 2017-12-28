@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
-import Popular from './Popular.js';
-import Battle from './Battle.js';
-import Nav from './Nav.js';
-import Home from './Home.js';
+var React =require('react');
+var Popular = require('./Popular.js');
+var Battle = require('./Battle.js');
+var Nav = require('./Nav.js');
+var Home = require('./Home.js');
 var ReactRouter = require('react-router-dom');
 var Router = ReactRouter.BrowserRouter;
 var Route = ReactRouter.Route;
 var Switch = ReactRouter.Switch;
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <Router>
@@ -22,8 +22,8 @@ class App extends Component {
           </Switch>
         </div>
       </Router>
-    );
+    )
   }
 }
 
-export default App;
+module.exports = App;

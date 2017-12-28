@@ -96,4 +96,4 @@ componentDidMount(){
   }
 }
 
-export default Popular;
+module.exports = Popular;

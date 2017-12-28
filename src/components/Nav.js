@@ -1,5 +1,4 @@
 var React = require('react');
-var PropTypes = require('prop-types');
 var NavLink = require('react-router-dom').NavLink;
 
 function Nav () {
@@ -19,4 +18,4 @@ let navBarPages = ['Home','Battle','Popular']
   )
 }
 
-export default Nav;
+module.exports = Nav;

@@ -12,4 +12,4 @@ function Home() {
   )
 }
 
-export default Home;
+module.exports = Home;

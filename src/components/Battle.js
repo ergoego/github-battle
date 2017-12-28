@@ -1,5 +1,4 @@
 var React = require('react');
-var PropTypes = require('prop-types')
 
 function Battle () {
   return(
@@ -9,4 +8,4 @@ function Battle () {
   )
 }
 
-export default Battle;
+module.exports = Battle;
