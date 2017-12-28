@@ -7,7 +7,7 @@ let navBarPages = ['Home','Battle','Popular']
       <ul className='nav'>
         {navBarPages.map(function(page) {
           return(
-            <li>
+            <li key={page}>
               <NavLink exact activeClassName='active' to={page === 'Home' ? '/' : '/'+page.toLowerCase()}>
                 {page}
               </NavLink>
