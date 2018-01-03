@@ -1,6 +1,7 @@
 var React = require('react');
-var PropTypes = require('prop-types')
-var api = require('../utils/api.js')
+var PropTypes = require('prop-types');
+var api = require('../utils/api.js');
+var Loading = require('./Loading.js');
 
 function SelectLanguage(props) {
   var languages = ['All', 'JavaScript','Ruby','Java','CSS','Python', 'Swift', 'Haskell', 'C', 'C++', 'C#','Kotlin'];
@@ -89,8 +90,8 @@ componentDidMount(){
         <SelectLanguage
           selectedLanguage={this.state.selectedLanguage}
           onSelect={this.updateLanguage}/>
-          {!this.state.repos ? <p>LOADING</p> : <RepoGrid repos={this.state.repos} />}
-
+          {!this.state.repos ? <Loading text='Getting Top Repos'/>
+          : <RepoGrid repos={this.state.repos} />}
       </div>
     )
   }
